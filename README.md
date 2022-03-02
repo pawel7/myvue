@@ -12,10 +12,16 @@ An admin can update all posts.
 
 ## Installation
 
-``` bash
+```bash
 git clone https://github.com/pawel7/myvue.git
 cd myvue
 composer install
+cp .env.example .env
+```
+
+Edit your database name, username, passowrd in .env file.
+
+```bash
 php artisan key:generate
 php artisan migrate --seed
 npm install
@@ -26,43 +32,61 @@ php artisan serve
 ## Routes
 
 The following route is shown using Vue.js ( Front.vue )
-
+```
 GET /
-
+```
 
 The following API routes are available:
 
 ## Public routes
 
+```
 POST /api/register
 POST /api/login
+```
 
-	// List all posts
+List all posts
+```
 GET /api/posts
+```
 
-	// List all users
+List all users
+```
 GET /api/users
+```
 
-	// List a single user
+List a single user
+```
 GET /api/users/{id}
+```
 
-	// List a single post
+List a single post
+```
 GET /api/posts/{id}
-
-	// Search a POST by title
+```
+Search a POST by title
+```
 GET /posts/search/{title}
-
+```
 
 ## Protected routes
 
-   // Create a new post
+Create a new post
+```
 POST /api/posts
-
-   // Update a POST 
+```
+   
+Update a POST 
+```
 PUT /api/posts/{id}
+```
 
-   // Delete a POST    
+Delete a POST    
+```
 DELETE /api/posts/{id}
-        
-   // Logout
+```        
+
+Logout
+```
 POST /api/logout
+```

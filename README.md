@@ -19,7 +19,7 @@ composer install
 cp .env.example .env
 ```
 
-Edit your database name, username, passowrd in .env file.
+Edit your database name, username, password in `.env` file.
 
 ```bash
 php artisan key:generate

@@ -3,7 +3,7 @@
                 <h1 class="my-4">Users and Posts ( Front.vue )</h1>
                  <div class="col-md-6">
                      <h2>Users</h2>
-                    <table>
+                    <table class="table table-bordered table-striped">
                     <tr>
                         <th width="30%">Name</th>
                         <th width="40%">Email</th>
@@ -16,9 +16,10 @@
                     </tr>
                 </table>
                 </div>
+                <br>
             <div class="col-md-6">
                 <h2>Posts</h2>
-                    <table>
+                    <table  class="table table-bordered table-striped">
                     <tr>
                         <th width="30%">Title</th>
                         <th width="60%">Body</th>

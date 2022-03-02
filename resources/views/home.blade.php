@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script>window.Laravel = {csrfToken: '{{ csrf_token() }}'}</script>
-    <title>Laravel API home.blade.php</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <title>Laravel API</title>
 </head>
 <body class="container-fluid">
 

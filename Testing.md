@@ -1,6 +1,6 @@
-## Testowanie
+## Testing
 
-Testowałem za pomocą programu Postman
+You can test the application with Postman
 
 PUT http://localhost:8005/api/posts/1
 {
@@ -25,9 +25,9 @@ http://localhost:8005/api/logout
 }
 
 
-POST http://localhost:8005/api/login jako użytkownik który ma is_admin=1
+POST http://localhost:8005/api/login as an admin user
 
-Może edytować nie swój post:
+He can update somebody else's post:
 
 http://localhost:8005/api/posts/1
 "data": {

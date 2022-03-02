@@ -21,6 +21,29 @@ cp .env.example .env
 
 Edit your database name, username, password in `.env` file.
 
+
+To use `sqlite` you can just create an empty `database/database.sqlite` file:
+```
+touch database/database.sqlite
+```
+
+and set `DB_CONNECTION`
+
+```
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+```
+
+For mysqli you can ignore or delete the lines
+```
+#DB_DATABASE=laravel
+#DB_USERNAME=root
+#DB_PASSWORD=
+```
+
+When the database connection is ready do the folowing:
+
 ```bash
 php artisan key:generate
 php artisan migrate --seed

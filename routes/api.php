@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,12 @@ Route::post('/login', [AuthController::class, 'login']);
 
 // List all posts
 Route::get('/posts', [PostController::class, 'index']);
+
+// List all users
+Route::get('/users', [UserController::class, 'index']);
+
+// List a single user
+Route::get('/users/{id}', [UserController::class, 'show']);
 
 // List a single post
 Route::get('/posts/{id}', [PostController::class, 'show']);

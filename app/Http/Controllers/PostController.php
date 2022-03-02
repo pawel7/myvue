@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\User;
-use App\Http\Resources\Post as PostResource;
+use App\Http\Resources\PostResource as PostResource;
 
 class PostController extends Controller
 {
@@ -17,10 +17,17 @@ class PostController extends Controller
     public function index()
     {
         // Get the posts
-        $posts = Post::paginate(5);
+        
+        //$posts = Post::with('user')->get();
+       // echo "<pre>"; var_dump($posts); echo "</pre>\n";
+        $posts = Post::all();
+        //echo "<pre>"; var_dump($posts); echo "</pre>\n";
+        // $posts = Post::paginate(5);
             
         // Return collection of posts as a resource
         return PostResource::collection($posts);
+
+        //   return view('posts.index', compact('posts'));
     }
 
     /**

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +19,12 @@ use App\Http\Controllers\UserController;
 
  
 Route::get('users', [UserController::class, 'index']);
-Route::get('list', [UserController::class, 'list']);
+Route::get('posts', [PostController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/users_and_posts', [HomeController::class,  'index']);
+
+Route::view('/', 'home');

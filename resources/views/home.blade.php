@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script>window.Laravel = {csrfToken: '{{ csrf_token() }}'}</script>
-    <title>Vue Front End For A Laravel API - Send form data with Vue.js</title>
-    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-    <script src="/js/app.js"></script>
-    <!--script src="{{ mix('js/app.js') }}" defer></script-->
+    <title>Laravel API home.blade.php</title>
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body class="container-fluid">
+
 <div id="app">
-    <navbar></navbar>
-    <div class="py-4">
-        @yield('content')
-    </div>
+    <front-page></front-page>
 </div>
+
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

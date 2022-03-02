@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">User List</div>
+                <div class="card-header">User List ( UserComponent.vue )</div>
                  
                 <div class="card-body">
                 <table>
@@ -33,7 +33,7 @@
         },
         methods: {
             getUser(){
-                axios.get('/list')
+                axios.get('/api/users')
                      .then((response)=>{
                        this.users = response.data.users
                      })

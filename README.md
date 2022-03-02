@@ -35,7 +35,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 ```
 
-For mysqli you can ignore or delete the lines
+For `sqlite` you can ignore or delete the lines
 ```
 #DB_DATABASE=laravel
 #DB_USERNAME=root

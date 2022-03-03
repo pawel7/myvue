@@ -18,13 +18,15 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('users', [UserController::class, 'index']);
-Route::get('posts', [PostController::class, 'index']);
+// Route::get('users', [UserController::class, 'index']);
+// Route::get('posts', [PostController::class, 'index']);
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Route::get('/users_and_posts', [HomeController::class,  'index']);
+//Route::get('/users_and_posts', [HomeController::class,  'index']);
 
 Route::view('/', 'home');
+
+Route::resource('posts', 'App\Http\Controllers\PostController');

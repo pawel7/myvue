@@ -18,10 +18,20 @@ use App\Http\Controllers\UserController;
 |
 */
 
+// from https://github.com/LaravelDaily/Laravel-Vue-Form-Demo/blob/master/routes/api.php
+
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+// Route::apiResource('users', 'Api\\UserController');
+// Route::apiResource('posts', 'Api\\PostController');
+
+
 // === Public routes
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
+Route::get('/login', [AuthController::class, 'login']);
 
 // List all posts
 Route::get('/posts', [PostController::class, 'index']);

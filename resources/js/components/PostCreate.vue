@@ -40,10 +40,10 @@
         </div>
 
         <div class="form-group row">
-            <label for="description" class="col-md-4 col-form-label text-md-right">Post Body</label>
+            <label for="body" class="col-md-4 col-form-label text-md-right">Post Body</label>
 
             <div class="col-md-6">
-                <textarea id="description" rows="5" class="form-control" name="description" v-model="fields.body" required></textarea>
+                <textarea id="body" rows="5" class="form-control" name="body" v-model="fields.body" required></textarea>
                 <div class="alert alert-danger" v-if="errors && errors.body">
                     {{ errors.body[0] }}
                 </div>

@@ -23,7 +23,7 @@
                             <tr>
                                 <td>{{ $post->title }}</td>
                                 <td>{{ $post->body }}</td>
-                                <td>{{ $post->user->name }}</td>
+                                <td>Tu bedzie post user_name</td>
                             </tr>
                         @empty
                             <tr>

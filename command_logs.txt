@@ -1,0 +1,46 @@
+php artisan ui bootstrap --auth
+Bootstrap scaffolding installed successfully.
+Please run "npm install && npm run dev" to compile your fresh scaffolding.
+
+ The [auth/login.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > y
+
+ The [auth/passwords/confirm.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [auth/passwords/email.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [auth/passwords/reset.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [auth/register.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [auth/verify.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [home.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [layouts/app.blade.php] view already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+ The [HomeController.php] file already exists. Do you want to replace it? (yes/no) [no]:
+ > yes
+
+Authentication scaffolding generated successfully.
+pawel@DESKTOP-86HO5NO:~/pro/myvue$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app/Http/Controllers/HomeController.php
+        modified:   resources/views/home.blade.php
+        modified:   resources/views/layouts/app.blade.php
+        modified:   routes/web.php
+
+no changes added to commit (use "git add" and/or "git commit -a")

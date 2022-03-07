@@ -20,7 +20,7 @@ use App\Http\Controllers\HomeController;
 
  Route::get('users', [UserController::class, 'index']);
  Route::get('posts', [PostController::class, 'index']);
- //Route::get('/users_and_posts', [HomeController::class,  'index']);
+ Route::get('/users_and_posts', [HomeController::class,  'index']);
 
 //  Route::get('/', function () {
 //      return view('home');
@@ -31,9 +31,10 @@ use App\Http\Controllers\HomeController;
 
 Route::resource('posts', 'App\Http\Controllers\PostController');
 
-Auth::routes();
-
 Route::view('/', 'home');
 
-Route::get('/home', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

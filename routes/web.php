@@ -20,6 +20,8 @@ use App\Http\Controllers\HomeController;
 
  Route::get('users', [UserController::class, 'index']);
  Route::get('posts', [PostController::class, 'index']);
+ Route::get('posts_resource', [PostController::class, 'index_resource']);
+ 
  Route::get('/users_and_posts', [HomeController::class,  'index']);
 
 //  Route::get('/', function () {

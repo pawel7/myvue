@@ -30,8 +30,8 @@ use App\Http\Controllers\UserController;
 
 // === Public routes
 
-Route::get('/register', [AuthController::class, 'register']);
-Route::get('/login', [AuthController::class, 'login']);
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
 
 // List all posts
 Route::get('/posts', [PostController::class, 'index']);

@@ -40,13 +40,13 @@
         data() {
             return {
                 fields: {},
-                user_id: 0,
+                user_id: 0, // {{ user_id }}
                 success: false,
                 errors: {}
             }
         },
         mounted() {
-           // somehow get the logged user_id to this.user_id !!
+           // How to get the logged user_id to this.user_id !!
         },
         methods: {
             submit() {

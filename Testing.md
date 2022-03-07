@@ -2,6 +2,24 @@
 
 You can test the application with Postman
 
+### Routes for posts
+
+To get a list of posts as a HTML list of with   *Title 	Body 	User_id  User*  
+
+```
+GET http://localhost:8000/posts
+```
+
+
+To get posts as a *JSON resource*:  
+
+```
+GET http://localhost:8000/posts_resource
+```
+
+
+### API routes
+
 ```
 PUT http://localhost:8000/api/posts/1
 { 
@@ -50,3 +68,4 @@ http://localhost:8000/api/posts/1
         "user_id": 3
     }
 ```    
+

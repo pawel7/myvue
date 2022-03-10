@@ -11,14 +11,14 @@ Add `.default` after require("vue") in `resources/js/app.js`:
 window.Vue = require("vue").default;
 ```
 
-1. Source map error: Error: request failed with status 404
+2. Source map error: Error: request failed with status 404
 URL : http://127.0.0.1:8002/js/app.js
 
-[solution](https://stackoverflow.com/questions/49726204/source-map-error-request-failed-with-status-404-resource-url-http-mywebsite)
+[Solution](https://stackoverflow.com/questions/49726204/source-map-error-request-failed-with-status-404-resource-url-http-mywebsite)
 
 
 
-2. Module parse failed: Unexpected token (1:0)  
+3. Module parse failed: Unexpected token (1:0)  
 You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file.
 
 ```
@@ -53,11 +53,8 @@ mix.js('resources/js/app.js', 'public/js').vue()
     .sourceMaps();
 ```
 
+4. Though I have logged as an admin user, when I submit a new post with `localhost:8000/posts/create` I get `401 Unauthorized`.
 
+5. How to pass the current logged user user_id to a javascript .vue file, e.g. `js/components/PostCreate.vue` ?
 
-3. Though I have logged as an admin user, when I submit a new post with `localhost:8000/posts/create` I get `401 Unauthorized`
-
-4. How to pass the current logged user user_id to a javascript .vue file, e.g. `js/components/PostCreate.vue` ?
-
-5. Why there is no method="POST" in a form in vue
-
+6. Why there is no method="POST" in a form in vue ?  

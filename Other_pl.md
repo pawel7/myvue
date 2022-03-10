@@ -73,48 +73,48 @@ W Laravel Vue Form Demo `php artisan route:list` daje poniższą tabelę:
 
 W moim projekcie myvue `php artisan route:list` daje:  
 
-  ```
-  GET\|HEAD        / ............................................................................................................................. HomeController@index  
-  POST            _ignition/execute-solution ........................................... ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController  
-  GET\|HEAD        _ignition/health-check ....................................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController  
-  POST            _ignition/update-config .................................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController  
-  POST            api/login ..................................................................................................................... AuthController@login  
-  POST            api/logout ................................................................................................................... AuthController@logout  
-  GET\|HEAD        api/posts ..................................................................................................................... PostController@index  
-  POST            api/posts ..................................................................................................................... PostController@store  
-  GET\|HEAD        api/posts/search/{title} ..................................................................................................... PostController@search  
-  GET\|HEAD        api/posts/{id} ................................................................................................................. PostController@show  
-  PUT             api/posts/{id} ............................................................................................................... PostController@update  
-  DELETE          api/posts/{id} .............................................................................................................. PostController@destroy  
-  POST            api/register ............................................................................................................... AuthController@register  
-  GET\|HEAD        api/users ..................................................................................................................... UserController@index  
-  GET\|HEAD        api/users/{id} ................................................................................................................. UserController@show  
-  GET\|HEAD        home ................................................................................................................... home › HomeController@index  
-  GET\|HEAD        livewire/livewire.js ........................................................................ Livewire\Controllers › LivewireJavaScriptAssets@source  
-  GET\|HEAD        livewire/livewire.js.map ...................................................................... Livewire\Controllers › LivewireJavaScriptAssets@maps  
-  POST            livewire/message/{name} ............................................................ livewire.message › Livewire\Controllers › HttpConnectionHandler  
-  GET\|HEAD        livewire/preview-file/{filename} .......................................... livewire.preview-file › Livewire\Controllers › FilePreviewHandler@handle  
-  POST            livewire/upload-file ........................................................ livewire.upload-file › Livewire\Controllers › FileUploadHandler@handle  
-  GET\|HEAD        login ................................................................................................... login › Auth\LoginController@showLoginForm  
-  POST            login ................................................................................................................... Auth\LoginController@login  
-  POST            logout ........................................................................................................ logout › Auth\LoginController@logout  
-  GET\|HEAD        password/confirm ................................................................. password.confirm › Auth\ConfirmPasswordController@showConfirmForm  
-  POST            password/confirm ............................................................................................ Auth\ConfirmPasswordController@confirm  
-  POST            password/email ................................................................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail  
-  GET\|HEAD        password/reset ................................................................ password.request › Auth\ForgotPasswordController@showLinkRequestForm  
-  POST            password/reset ................................................................................ password.update › Auth\ResetPasswordController@reset  
-  GET\|HEAD        password/reset/{token} ................................................................. password.reset › Auth\ResetPasswordController@showResetForm  
-  GET\|HEAD        posts ........................................................................................................... posts.index › PostController@index  
-  POST            posts ........................................................................................................... posts.store › PostController@store  
-  GET\|HEAD        posts/create .................................................................................................. posts.create › PostController@create  
-  GET\|HEAD        posts/{post} ...................................................................................................... posts.show › PostController@show  
-  PUT\|PATCH       posts/{post} .................................................................................................. posts.update › PostController@update  
-  DELETE          posts/{post} ................................................................................................ posts.destroy › PostController@destroy  
-  GET\|HEAD        posts/{post}/edit ................................................................................................. posts.edit › PostController@edit  
-  GET\|HEAD        posts_resource ....................................................................................................... PostController@index_resource  
-  GET\|HEAD        register ................................................................................... register › Auth\RegisterController@showRegistrationForm  
-  POST            register .......................................................................................................... Auth\RegisterController@register  
-  GET\|HEAD        sanctum/csrf-cookie .................................................................................... Laravel\Sanctum › CsrfCookieController@show  
-  GET\|HEAD        users ......................................................................................................................... UserController@index  
-  GET\|HEAD        users_and_posts ............................................................................................................... HomeController@index  
-  ```
+```
+GET|HEAD        / ................................................................................... HomeController@index
+POST            _ignition/execute-solution ........on.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+GET|HEAD        _ignition/health-check ............. ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+POST            _ignition/update-config ...........ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+POST            api/login ........................................................................... AuthController@login
+POST            api/logout ......................................................................... AuthController@logout
+GET|HEAD        api/posts ........................................................................... PostController@index
+POST            api/posts ........................................................................... PostController@store
+GET|HEAD        api/posts/search/{title} ........................................................... PostController@search
+GET|HEAD        api/posts/{id} ....................................................................... PostController@show
+PUT             api/posts/{id} ..................................................................... PostController@update
+DELETE          api/posts/{id} .................................................................... PostController@destroy
+POST            api/register ..................................................................... AuthController@register
+GET|HEAD        api/users ........................................................................... UserController@index
+GET|HEAD        api/users/{id} ....................................................................... UserController@show
+GET|HEAD        home ......................................................................... home › HomeController@index
+GET|HEAD        livewire/livewire.js .............................. Livewire\Controllers › LivewireJavaScriptAssets@source
+GET|HEAD        livewire/livewire.js.map ............................ Livewire\Controllers › LivewireJavaScriptAssets@maps
+POST            livewire/message/{name} .................. livewire.message › Livewire\Controllers › HttpConnectionHandler
+GET|HEAD        livewire/preview-file/{filename} .livewire.preview-file › Livewire\Controllers › FilePreviewHandler@handle
+POST            livewire/upload-file .............. livewire.upload-file › Livewire\Controllers › FileUploadHandler@handle
+GET|HEAD        login ......................................................... login › Auth\LoginController@showLoginForm
+POST            login ......................................................................... Auth\LoginController@login
+POST            logout .............................................................. logout › Auth\LoginController@logout
+GET|HEAD        password/confirm ....................... password.confirm › Auth\ConfirmPasswordController@showConfirmForm
+POST            password/confirm .................................................. Auth\ConfirmPasswordController@confirm
+POST            password/email ......................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail
+GET|HEAD        password/reset ...................... password.request › Auth\ForgotPasswordController@showLinkRequestForm
+POST            password/reset ...................................... password.update › Auth\ResetPasswordController@reset
+GET|HEAD        password/reset/{token} ....................... password.reset › Auth\ResetPasswordController@showResetForm
+GET|HEAD        posts ................................................................. posts.index › PostController@index
+POST            posts ................................................................. posts.store › PostController@store
+GET|HEAD        posts/create ........................................................ posts.create › PostController@create
+GET|HEAD        posts/{post} ............................................................ posts.show › PostController@show
+PUT|PATCH       posts/{post} ........................................................ posts.update › PostController@update
+DELETE          posts/{post} ...................................................... posts.destroy › PostController@destroy
+GET|HEAD        posts/{post}/edit ....................................................... posts.edit › PostController@edit
+GET|HEAD        posts_resource ............................................................. PostController@index_resource
+GET|HEAD        register ......................................... register › Auth\RegisterController@showRegistrationForm
+POST            register ................................................................ Auth\RegisterController@register
+GET|HEAD        sanctum/csrf-cookie .......................................... Laravel\Sanctum › CsrfCookieController@show
+GET|HEAD        users ............................................................................... UserController@index
+GET|HEAD        users_and_posts ..................................................................... HomeController@index
+```

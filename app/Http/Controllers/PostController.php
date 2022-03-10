@@ -40,8 +40,13 @@ class PostController extends Controller
 
     public function create()
     {
-        $user_id = auth()->user()->id;
-
+        $usr = auth()->user();
+        if( !$usr )
+        {
+            return redirect()->route('login');
+        }
+        $user_id = $usr->id;
+        
         return view('posts.create', compact('user_id'));
     }
 
@@ -69,9 +74,16 @@ class PostController extends Controller
              ]);
         
         $arr = $request->all();
-        $curr_user_id = auth()->user()->id;
-        $arr[ 'user_id' ] = $curr_user_id;
-        return Post::create($arr);
+        $usr = auth()->user();
+        if ( $usr )
+        {
+            $arr[ 'user_id' ] = $usr->id;
+            return Post::create($arr);
+        }
+        else
+        {
+            return redirect()->route('login');
+        }
     }
 
     /**

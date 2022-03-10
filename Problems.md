@@ -11,6 +11,13 @@ Add `.default` after require("vue") in `resources/js/app.js`:
 window.Vue = require("vue").default;
 ```
 
+1. Source map error: Error: request failed with status 404
+URL : http://127.0.0.1:8002/js/app.js
+
+[solution](https://stackoverflow.com/questions/49726204/source-map-error-request-failed-with-status-404-resource-url-http-mywebsite)
+
+
+
 2. Module parse failed: Unexpected token (1:0)  
 You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file.
 
@@ -45,6 +52,8 @@ mix.js('resources/js/app.js', 'public/js').vue()
     .sass('resources/sass/app.scss', 'public/css')
     .sourceMaps();
 ```
+
+
 
 3. Though I have logged as an admin user, when I submit a new post with `localhost:8000/posts/create` I get `401 Unauthorized`
 

@@ -57,4 +57,3 @@ mix.js('resources/js/app.js', 'public/js').vue()
 
 5. How to pass the current logged user user_id to a javascript .vue file, e.g. `js/components/PostCreate.vue` ?
 
-6. Why there is no method="POST" in a form in vue ?  
